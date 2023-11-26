@@ -3,10 +3,10 @@ package calculadora;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class TestCalculadora {
+class TestCalculadora {
 
     @Test
-    public void testGetSoma() {
+    void testGetSoma() {
         Calculadora calculadora = new Calculadora(4.0, 2.0);
         double retornoEsperado = 6.0;
         double retornoFeito = calculadora.getSoma();
@@ -14,7 +14,7 @@ public class TestCalculadora {
     }
 
     @Test
-    public void testGetDiferenca() {
+    void testGetDiferenca() {
         Calculadora calculadora = new Calculadora(4.0, 2.0);
         double retornoEsperado = 2.0;
         double retornoFeito = calculadora.getDiferenca();
