@@ -36,4 +36,13 @@ class TestCalculadora {
         double retornoFeito = calculadora.getQuociente();
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
+    
+    @Test
+    void testGetSomaConstrutorVazio() {
+        Calculadora calculadora = new Calculadora();
+        double retornoEsperado = 0.0;
+        double retornoFeito = calculadora.getSoma();
+        assertEquals(retornoEsperado, retornoFeito, 0);
+    }
+    
 }
