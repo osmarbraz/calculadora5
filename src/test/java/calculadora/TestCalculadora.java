@@ -43,6 +43,5 @@ class TestCalculadora {
         double retornoEsperado = 0.0;
         double retornoFeito = calculadora.getSoma();
         assertEquals(retornoEsperado, retornoFeito, 0);
-    }
-    
+    }    
 }
